@@ -1,6 +1,6 @@
 export const HomePage = () => {
   return (
-    <div>
+    <div className="container">
       <h1>Salón pre psov Jenny</h1>
       <p>
         Vitajte na stránke salónu pre psov Jenny. Naša ponuka je zameraná na
