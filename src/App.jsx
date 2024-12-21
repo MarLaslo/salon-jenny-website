@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { HomePage } from './pages/HomePage';
+import { MainLayout } from './layouts/mainLayout';
 import { BrowserRouter, Routes, Route} from "react-router";
 
 function App() {
@@ -8,7 +9,9 @@ function App() {
   return (
     <BrowserRouter>
     <Routes>
-      <Route path="/" element={<HomePage />} />
+      <Route path="/" element={<MainLayout />}>
+        <Route index element={<HomePage />} />
+      </Route>
     </Routes>
   </BrowserRouter>
 
