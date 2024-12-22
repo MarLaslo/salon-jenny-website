@@ -23,26 +23,24 @@ export const NavBar = () => {
         <div className="flex space-x-3 md:order-2 md:space-x-0 rtl:space-x-reverse">
           <button
             type="button"
-            className="hidden rounded-md bg-blue-500 px-4 py-2 text-center text-sm font-medium text-white hover:bg-blue-300 focus:outline-none focus:ring-4 focus:ring-blue-300 lg:order-1 lg:flex lg:w-auto"
+            className="hidden rounded-md bg-blue-500 px-4 py-2 text-center text-sm font-medium text-white hover:bg-blue-300 focus:outline-none focus:ring-4 focus:ring-blue-300 sm:order-1 sm:flex sm:w-auto"
           >
             Objednať sa
           </button>
         </div>
         <div
-          className="flex w-auto items-center justify-between"
+          className="flex w-auto items-center justify-between px-6 lg:px-3"
           id="navbar-sticky"
         >
-          <div>
-            {buttons.map(([title, url]) => (
-              <a
-                key={title}
-                href={url}
-                className="rounded-lg px-1 py-0 font-medium text-white hover:bg-blue-300 hover:text-blue-500 sm:px-3 sm:py-3"
-              >
-                {title}
-              </a>
-            ))}
-          </div>
+          {buttons.map(([title, url]) => (
+            <a
+              key={title}
+              href={url}
+              className="rounded-lg px-1 py-0 font-medium text-white hover:bg-blue-300 hover:text-blue-500 sm:px-3 sm:py-3"
+            >
+              {title}
+            </a>
+          ))}
         </div>
       </div>
     </nav>
