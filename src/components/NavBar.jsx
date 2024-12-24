@@ -20,7 +20,7 @@ export const NavBar = () => {
   return (
     <>
       <nav className="sticky start-0 top-0 z-20 w-full bg-blue-400">
-        <div className="flex flex-wrap items-center justify-center lg:justify-between">
+        <div className="flex flex-wrap items-center justify-between lg:justify-between">
           <a href="/" className="ml-4 flex items-start space-x-3 py-2">
             <img
               src="src/assets/0.png"
@@ -48,7 +48,7 @@ export const NavBar = () => {
           </div>
           <button
             type="button"
-            className="ml-8 lg:ml-auto mr-4 hidden rounded-md bg-blue-600 px-4 py-2 text-center text-sm font-medium text-white transition duration-300 ease-in-out hover:bg-blue-700 min-[400px]:flex min-[400px]:w-auto"
+            className="ml-auto mr-4 hidden rounded-md bg-blue-600 px-4 py-2 text-center text-sm font-medium text-white transition duration-300 ease-in-out hover:bg-blue-700 min-[400px]:flex min-[400px]:w-auto"
           >
             Objednať sa
           </button>
