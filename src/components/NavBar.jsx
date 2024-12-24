@@ -1,7 +1,9 @@
 import { useState } from 'react';
+import useInitialState from '../hooks/useInitialState';
 
 export const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const intialState = useInitialState();
 
   const buttons = [
     ['Domov', '/'],
@@ -14,12 +16,11 @@ export const NavBar = () => {
 
   const handleClick = () => {
     setIsMenuOpen(!isMenuOpen);
-    console.log(isMenuOpen);
   };
 
   return (
     <>
-      <nav className="sticky start-0 top-0 z-20 w-full bg-blue-400">
+      <nav className={`sticky start-0 top-0 z-20 w-full bg-blue-400 transition-opacity ease-in duration-700 ${intialState ? 'opacity-100' : 'opacity-0'}`}>
         <div className="flex flex-wrap items-center justify-between lg:justify-between">
           <a href="/" className="ml-4 flex items-start space-x-3 py-2">
             <img
@@ -50,9 +51,9 @@ export const NavBar = () => {
             type="button"
             className="ml-auto mr-4 hidden rounded-md bg-blue-600 px-4 py-2 text-center text-sm font-medium text-white transition duration-300 ease-in-out hover:bg-blue-700 min-[400px]:flex min-[400px]:w-auto"
           >
-            Objednať sa
+            Kontaktovať
           </button>
-          <button className="mr-4 lg:hidden" onClick={() => handleClick()}>
+          <button className="mr-4 lg:hidden" onClick={handleClick}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-8 w-8 stroke-current stroke-2 text-white transition duration-300 ease-in-out hover:text-blue-500"
