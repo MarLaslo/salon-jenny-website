@@ -5,7 +5,7 @@ export const HeroImage = () => {
 const intialState = useInitialState();
 
   return (
-    <div className={`flex h-screen flex-col items-center justify-items-center justify-center bg-gradient-to-b from-cyan-500 to-blue-500 transition-opacity ease-in duration-700 ${intialState ? 'opacity-100' : 'opacity-0'}`}>
+    <div className={`flex h-screen flex-col items-center justify-items-center justify-center bg-gradient-to-b from-white from-60% via-cyan-100 to-white transition-opacity ease-in duration-700 ${intialState ? 'opacity-100' : 'opacity-0'}`}>
       <div className="basis-1/2 self-center max-w-lg p-4">
         <img src={heroImage} alt="Salón pre psov Jenny"/>
       </div>
@@ -22,7 +22,7 @@ const intialState = useInitialState();
         <a href="callto:+421908701017">
         <button
           type="button"
-          className="mt-4 rounded-md bg-blue-600 px-4 py-2 text-center text-md font-medium text-white transition duration-300 ease-in-out hover:bg-blue-700"
+          className="mt-4 rounded-md bg-cyan-600 px-4 py-2 text-center text-md font-medium text-white transition duration-300 ease-in-out hover:bg-cyan-700"
         >
           Kontaktovať
         </button>
