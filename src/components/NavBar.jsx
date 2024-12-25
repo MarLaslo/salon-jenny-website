@@ -20,7 +20,9 @@ export const NavBar = () => {
 
   return (
     <>
-      <nav className={`sticky start-0 top-0 z-20 w-full bg-cyan-400 transition-opacity ease-in duration-700 ${intialState ? 'opacity-100' : 'opacity-0'}`}>
+      <nav
+        className={`sticky start-0 top-0 z-20 w-full bg-cyan-400 transition-opacity duration-700 ease-in ${intialState ? 'opacity-100' : 'opacity-0'}`}
+      >
         <div className="flex flex-wrap items-center justify-between lg:justify-between">
           <a href="/" className="ml-4 flex items-start space-x-3 py-2">
             <img
@@ -47,12 +49,14 @@ export const NavBar = () => {
               </div>
             ))}
           </div>
-          <button
-            type="button"
-            className="shadow-md ml-auto mr-4 hidden rounded-md bg-cyan-600 px-4 py-2 text-center text-sm font-medium text-white transition duration-300 ease-in-out hover:bg-cyan-700 min-[400px]:flex min-[400px]:w-auto"
-          >
-            Kontaktovať
-          </button>
+          <a href="callto:+421908701017" className="ml-auto mr-4 hidden min-[400px]:flex min-[400px]:w-auto">
+            <button
+              type="button"
+              className="rounded-md bg-cyan-600 px-4 py-2 text-center text-sm font-medium text-white shadow-md transition duration-300 ease-in-out hover:bg-cyan-700 "
+            >
+              Kontaktovať
+            </button>
+          </a>
           <button className="mr-4 lg:hidden" onClick={handleClick}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +74,7 @@ export const NavBar = () => {
         </div>
       </nav>
       {isMenuOpen && (
-        <div className="lg:hidden sticky start-0 top-0 z-20 w-full drop-shadow-2xl">
+        <div className="sticky start-0 top-0 z-20 w-full drop-shadow-2xl lg:hidden">
           {buttons.map(([title, url]) => (
             <div
               className="h-11 bg-cyan-400 py-1 text-center text-sm font-bold text-white transition duration-300 ease-out hover:bg-cyan-300 hover:text-cyan-500"
