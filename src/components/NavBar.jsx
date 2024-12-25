@@ -49,7 +49,7 @@ export const NavBar = () => {
           </div>
           <button
             type="button"
-            className="ml-auto mr-4 hidden rounded-md bg-cyan-600 px-4 py-2 text-center text-sm font-medium text-white transition duration-300 ease-in-out hover:bg-cyan-700 min-[400px]:flex min-[400px]:w-auto"
+            className="shadow-md ml-auto mr-4 hidden rounded-md bg-cyan-600 px-4 py-2 text-center text-sm font-medium text-white transition duration-300 ease-in-out hover:bg-cyan-700 min-[400px]:flex min-[400px]:w-auto"
           >
             Kontaktovať
           </button>

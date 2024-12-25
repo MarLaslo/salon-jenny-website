@@ -22,7 +22,7 @@ const intialState = useInitialState();
         <a href="callto:+421908701017">
         <button
           type="button"
-          className="mt-4 rounded-md bg-cyan-600 px-4 py-2 text-center text-md font-medium text-white transition duration-300 ease-in-out hover:bg-cyan-700"
+          className="shadow-xl mt-4 rounded-md bg-cyan-600 px-4 py-2 text-center text-md font-medium text-white transition duration-300 ease-in-out hover:bg-cyan-700"
         >
           Kontaktovať
         </button>
