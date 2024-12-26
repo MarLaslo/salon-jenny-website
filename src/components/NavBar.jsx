@@ -21,7 +21,7 @@ export const NavBar = () => {
   return (
     <>
       <nav
-        className={`sticky start-0 top-0 z-20 w-full bg-cyan-400 transition-opacity duration-700 ease-in ${intialState ? 'opacity-100' : 'opacity-0'}`}
+        className={`sticky start-0 top-0 z-20 w-full bg-cyan-400 shadow-md transition-opacity duration-700 ease-in ${intialState ? 'opacity-100' : 'opacity-0'}`}
       >
         <div className="flex flex-wrap items-center justify-between lg:justify-between">
           <a href="/" className="ml-4 flex items-start space-x-3 py-2">
@@ -49,10 +49,13 @@ export const NavBar = () => {
               </div>
             ))}
           </div>
-          <a href="callto:+421908701017" className="ml-auto mr-4 hidden min-[400px]:flex min-[400px]:w-auto">
+          <a
+            href="callto:+421908701017"
+            className="ml-auto mr-4 hidden min-[400px]:flex min-[400px]:w-auto"
+          >
             <button
               type="button"
-              className="rounded-md bg-cyan-600 px-4 py-2 text-center text-sm font-medium text-white shadow-md transition duration-300 ease-in-out hover:bg-cyan-700 "
+              className="rounded-md bg-cyan-600 px-4 py-2 text-center text-sm font-medium text-white shadow-md transition duration-300 ease-in-out hover:bg-cyan-700"
             >
               Kontaktovať
             </button>
@@ -72,21 +75,22 @@ export const NavBar = () => {
             </svg>
           </button>
         </div>
+
+        {isMenuOpen && (
+          <div className="sticky start-0 top-0 z-20 w-full drop-shadow-2xl lg:hidden">
+            {buttons.map(([title, url]) => (
+              <div
+                className="h-11 border-b bg-cyan-400 py-1 text-center text-sm font-bold text-white transition duration-300 ease-out hover:bg-cyan-300 hover:text-cyan-500"
+                key={title}
+              >
+                <a href={url} className="block px-4 py-2">
+                  {title}
+                </a>
+              </div>
+            ))}
+          </div>
+        )}
       </nav>
-      {isMenuOpen && (
-        <div className="sticky start-0 top-0 z-20 w-full drop-shadow-2xl lg:hidden">
-          {buttons.map(([title, url]) => (
-            <div
-              className="h-11 bg-cyan-400 py-1 text-center text-sm font-bold text-white transition duration-300 ease-out hover:bg-cyan-300 hover:text-cyan-500"
-              key={title}
-            >
-              <a href={url} className="block px-4 py-2">
-                {title}
-              </a>
-            </div>
-          ))}
-        </div>
-      )}
     </>
   );
 };

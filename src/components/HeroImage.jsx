@@ -6,13 +6,13 @@ export const HeroImage = () => {
 
   return (
     <div
-      className={`flex h-screen flex-col items-center justify-center justify-items-center bg-gradient-to-b from-white from-60% via-cyan-100 to-white transition-opacity duration-700 ease-in ${intialState ? 'opacity-100' : 'opacity-0'}`}
+      className={`flex mb-8 mt-8 flex-col items-center justify-center justify-items-center transition-opacity duration-700 ease-in ${intialState ? 'opacity-100' : 'opacity-0'}`}
     >
-      <div className="max-w-lg basis-1/2 self-center p-4">
+      <div className="max-w-lg self-center p-4">
         <img src={heroImage} alt="Salón pre psov Jenny" />
       </div>
-      <div className="flex basis-1/2 flex-col items-center justify-start">
-        <h2 className="mx-6 break-words text-center text-3xl font-bold text-black md:text-4xl">
+      <div className="flex flex-col items-center justify-start">
+        <h2 className="mx-6 break-words text-center text-3xl font-bold text-black md:text-4xl sha">
           Kadernický salón a wellness <br /> pre psov v Trebišove
         </h2>
         <p className="mt-6 break-words text-center text-2xl font-medium text-black">

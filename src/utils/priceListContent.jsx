@@ -1,93 +1,86 @@
 const priceListContent = [
-    {
-      heading: "Wellness a Ozonoterapia",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      items: [
-        {
-          title: "Malý psík",
-          price: "od 40€ - 55€",
-        },
-        {
-          title: "Stredný psík",
-          price: "od 45€ - 60€",
-        },
-        {
-          title: "Strihová úprava k SPA",
-          price: "od 10€",
-        },
-        {
-          title: "Empty ",
-          price: "Empty",
-        },
-      ],
-    },
-    {
-      heading: "Kompletná úprava",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      items: [
-        {
-          title: "Malý psík",
-          price: "od 40€ - 55€",
-        },
-        {
-          title: "Stredný psík",
-          price: "od 45€ - 60€",
-        },
-        {
-          title: "Veľký psík",
-          price: "od 10€",
-        },
-        {
-          title: "Empty ",
-          price: "Empty",
-        },
-      ],
-    },
-    {
-      heading: "Kúpeľ",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  {
+    heading: 'SPA a Ozonoterapia',
+    link: '/',
+    linkText: 'Viac informácií',
+    description: 'Doprajte svojmu štvornohému miláčikovi luxusnú starostlivosť zahŕňajúcu masku alebo zábal s minerálmi, upokojujúcu hydromasáž s ozónom, kúpanie so šampónom a kondicionérom, precízne sušenie a rozčesávanie srsti. Kompletný wellness pre zdravie a krásu vášho psíka!',
+    image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ficon-library.com%2Fimages%2Fplaceholder-image-icon%2Fplaceholder-image-icon-17.jpg&f=1&nofb=1&ipt=5976f33d620a1454e3aa5d61486dd651c035382c36f61304b3060e2adb69fa10&ipo=images',
+    items: [
+      {
+        title: 'Malý psík',
+        price: 'od 40€ - 55€',
+      },
+      {
+        title: 'Stredný psík',
+        price: 'od 45€ - 60€',
+      },
+      {
+        title: 'Strihová úprava k wellnesu',
+        price: 'od 10€',
+      },
+    ],
+  },
+  {
+    heading: 'Kompletná úprava',
+    description: 'Komplexná starostlivosť pre vášho psíka, ktorá zahŕňa kúpanie so šampónom a kondicionérom, dôkladné sušenie, jemné rozčesávanie a profesionálnu strihovú úpravu podľa potreby. Perfektný výsledok pre krásu a pohodlie vášho miláčika!',
+    image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ficon-library.com%2Fimages%2Fplaceholder-image-icon%2Fplaceholder-image-icon-17.jpg&f=1&nofb=1&ipt=5976f33d620a1454e3aa5d61486dd651c035382c36f61304b3060e2adb69fa10&ipo=images',
+    items: [
+      {
+        title: 'Malý psík',
+        price: 'od 40€ - 55€',
+      },
+      {
+        title: 'Stredný psík',
+        price: 'od 45€ - 60€',
+      },
+      {
+        title: 'Veľký psík',
+        price: 'od 10€',
+      },
+    ],
+  },
+  {
+    heading: 'Kúpeľ',
+    description: 'Základná starostlivosť zahŕňajúca kúpanie so šampónom a kondicionérom, dôkladné sušenie a jemné rozčesávanie srsti. Ideálne pre čistotu a sviežosť vášho miláčika!',
+    image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ficon-library.com%2Fimages%2Fplaceholder-image-icon%2Fplaceholder-image-icon-17.jpg&f=1&nofb=1&ipt=5976f33d620a1454e3aa5d61486dd651c035382c36f61304b3060e2adb69fa10&ipo=images',
+    items: [
+      {
+        title: 'Malý psík',
+        price: 'od 40€ - 55€',
+      },
+      {
+        title: 'Stredný psík',
+        price: 'od 45€ - 60€',
+      },
+      {
+        title: 'Veľký psík',
+        price: 'od 10€',
+      },
+    ],
+  },
+  {
+    heading: 'Doplnkové služby',
+    description: 'Individuálne namiešaná maska podľa potrieb vášho psíka priamo v salóne. Na výber: hydratačná maska, výživná maska alebo regeneračná maska. Dokonalá starostlivosť pre zdravú a krásnu srsť vášho miláčika!',
+    image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ficon-library.com%2Fimages%2Fplaceholder-image-icon%2Fplaceholder-image-icon-17.jpg&f=1&nofb=1&ipt=5976f33d620a1454e3aa5d61486dd651c035382c36f61304b3060e2adb69fa10&ipo=images',
+    items: [
+      {
+        title: 'Masky a zábaly ',
+        price: 'od 40€ - 55€',
+      },
+      {
+        title: 'Rozčesávanie splstnatenej srsti',
+        price: 'od 45€ - 60€',
+      },
+      {
+        title: 'Vyčesávanie podsady ',
+        price: 'od 10€',
+      },
+      {
+        title: 'Odblsenie ',
+        price: 'od 10€',
+      },
+    ],
+  },
+];
 
-      items: [
-        {
-          title: "Malý psík",
-          price: "od 40€ - 55€",
-        },
-        {
-          title: "Stredný psík",
-          price: "od 45€ - 60€",
-        },
-        {
-          title: "Veľký psík",
-          price: "od 10€",
-        },
-        {
-          title: "Empty ",
-          price: "Empty",
-        },
-      ],
-    },
-    {
-      heading: "Doplnkové služby",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      items: [
-        {
-          title: "Masky a zábaly ",
-          price: "od 40€ - 55€",
-        },
-        {
-          title: "Rozčesávanie splstnatenej srsti",
-          price: "od 45€ - 60€",
-        },
-        {
-          title: "Vyčesávanie podsady ",
-          price: "od 10€",
-        },
-        {
-          title: "Odblsenie ",
-          price: "od 10€",
-        },
-      ],
-    },
-  ];
-  
-    export default priceListContent;
+export default priceListContent;
