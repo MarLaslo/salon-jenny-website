@@ -6,14 +6,11 @@ export const PriceList = () => {
         console.log(PriceListContent.heading);
     });
 
-  return (
-    <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 md:gap-6 mx-6'>
-    {PriceListContent.map((item) => {
-        return(
-            <PriceCard key={item.heading} priceListContent={item} />
-        );
-    })}
-    </div>
-
-  );
+    return (
+        <div className="mx-6 my-20 grid grid-cols-1 md:grid-cols-2 md:gap-6 xl:grid-cols-4">
+            {PriceListContent.map((item) => {
+                return <PriceCard key={item.heading} priceListContent={item} />;
+            })}
+        </div>
+    );
 };
