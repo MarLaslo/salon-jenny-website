@@ -20,6 +20,8 @@ export const HomePage = () => {
                 <OzoneArticle />
                 <TwoRows>
                     <Contact />
+                <About />
+
                 </TwoRows>
             </TwoColumns>
         </>
