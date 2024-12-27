@@ -5,6 +5,7 @@ import { About } from '../components/About';
 import { TwoColumns } from '../components/TwoColumns';
 import { BeforeVisit } from '../components/BeforeVisit';
 import { TwoRows } from '../components/TwoRows';
+import { Contact } from '../components/Contact';
 
 export const HomePage = () => {
     return (
@@ -18,7 +19,7 @@ export const HomePage = () => {
             <TwoColumns>
                 <OzoneArticle />
                 <TwoRows>
-                    
+                    <Contact />
                 </TwoRows>
             </TwoColumns>
         </>
