@@ -1,9 +1,7 @@
 import { useState } from 'react';
-import useInitialState from '../hooks/useInitialState';
 
 export const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const intialState = useInitialState();
 
   const buttons = [
     ['Domov', '/'],
@@ -21,7 +19,7 @@ export const NavBar = () => {
   return (
     <>
       <nav
-        className={`sticky start-0 top-0 z-20 w-full bg-cyan-400 shadow-md transition-opacity duration-700 ease-in ${intialState ? 'opacity-100' : 'opacity-0'}`}
+        className="sticky start-0 top-0 z-20 w-full bg-cyan-400/95 shadow-md"
       >
         <div className="flex flex-wrap items-center justify-between lg:justify-between">
           <a href="/" className="ml-4 flex items-start space-x-3 py-2">
@@ -55,7 +53,7 @@ export const NavBar = () => {
           >
             <button
               type="button"
-              className="rounded-md bg-cyan-600 px-4 py-2 text-center text-sm font-medium text-white shadow-md transition duration-300 ease-in-out hover:bg-cyan-700"
+              className="rounded-md bg-cyan-500 px-4 py-2 text-center text-sm font-medium text-white shadow-md transition duration-300 ease-in-out hover:bg-cyan-700"
             >
               Kontaktovať
             </button>
