@@ -19,7 +19,7 @@ export const PriceList = () => {
                     })}
                 </div>
             </div>
-            <div className="container mx-auto mb-20 rounded-3xl border-b-2 border-t-2 border-red-100/60 bg-red-100/60 p-4 px-8 shadow-lg">
+            <div className="container mx-auto mb-20 rounded-3xl border-b-2 border-t-2 border-red-200/60 bg-red-300/60 p-4 px-8 shadow-lg">
                 <p>
                     <strong className="text-red-500">Dôležité 1: </strong>
                     Pred návštevou salónu si prosím prečítajte naše pravidlá a

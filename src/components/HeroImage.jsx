@@ -17,7 +17,7 @@ export const HeroImage = () => {
                     Otváracie hodiny: Podľa objednávky
                 </p>
                 <p className="text-1xl mt-6 break-words text-center font-medium text-black">
-                    Objednávky medzi 8:00 a 18:00 hod.
+                    Objednávky medzi 8:00 a 16:00 hod.
                 </p>
                 <p className="text-1xl mt-6 break-words text-center font-medium text-black">
                     Kontakt: <a href="callto:+421908701017">+421 918 701 017</a>

@@ -6,7 +6,7 @@ export const BeforeVisit = () => {
             <h2 className="mb-6 text-center text-3xl font-bold text-black md:text-4xl">
                 Pred návštevou salónu
             </h2>
-            <div className="container h-full mx-auto rounded-3xl border-b-2 border-slate-50/60 bg-slate-50/60 text-left shadow-lg">
+            <div className="container pb-10 mx-auto rounded-3xl border-b-2 border-slate-50/60 bg-slate-50/60 text-left shadow-lg">
                 <div className="flex flex-col px-10 pt-10 md:px-20">
                     <ol>
                         {beforeVisitContent[0].guidelines.map((item) => (

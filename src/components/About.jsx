@@ -6,7 +6,7 @@ export const About = () => {
             <h2 className="mb-6 text-center text-3xl font-bold text-black md:text-4xl">
                 O mne
             </h2>
-            <div className="container h-full mx-auto rounded-3xl border-b-2 border-slate-50/60 bg-slate-50/60 text-center italic shadow-lg">
+            <div className="container  mx-auto rounded-3xl border-b-2 border-cyan-300/20 bg-cyan-300/20 text-center italic shadow-lg">
                 <div className="flex flex-col px-10 pt-10 md:px-20">
                     <div className="mb-10 pt-10 text-justify">
                         <img

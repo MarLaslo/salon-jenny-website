@@ -1,6 +1,6 @@
 export const PriceCard = ({ priceListContent }) => {
     return (
-        <div className="container m-4 mx-auto rounded-3xl border-b-2 border-cyan-300/20 bg-cyan-300/20 p-4 shadow-lg">
+        <div className="container m-4 mx-auto rounded-3xl border-b-2 border-slate-50/60 bg-slate-50/60 p-4 shadow-lg">
             <div className="flex h-full flex-col items-center justify-center">
                 <h1 className="h-20 pb-6 text-center text-2xl font-bold">
                     {priceListContent.heading}
