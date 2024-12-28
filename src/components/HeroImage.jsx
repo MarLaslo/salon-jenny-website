@@ -1,12 +1,10 @@
-import useInitialState from '../hooks/useInitialState';
 import heroImage from '../assets/0.png';
 
 export const HeroImage = () => {
-    const intialState = useInitialState();
 
     return (
         <div
-            className={`mb-8 mt-8 flex flex-col items-center justify-center justify-items-center transition-opacity duration-700 ease-in ${intialState ? 'opacity-100' : 'opacity-0'}`}
+            className="mb-12 mt-8 flex flex-col items-center justify-center justify-items-center"
         >
             <div className="max-w-lg self-center p-4">
                 <img src={heroImage} alt="Salón pre psov Jenny" />
@@ -19,7 +17,7 @@ export const HeroImage = () => {
                     Otváracie hodiny: Podľa objednávky
                 </p>
                 <p className="text-1xl mt-6 break-words text-center font-medium text-black">
-                    Objednávky medzi 8:00 a 18:00 hod.
+                    Objednávky medzi 8:00 a 16:00 hod.
                 </p>
                 <p className="text-1xl mt-6 break-words text-center font-medium text-black">
                     Kontakt: <a href="callto:+421908701017">+421 918 701 017</a>
@@ -28,7 +26,7 @@ export const HeroImage = () => {
                 <a href="callto:+421908701017">
                     <button
                         type="button"
-                        className="text-md mt-4 rounded-md bg-cyan-600 px-4 py-2 text-center font-medium text-white shadow-xl transition duration-300 ease-in-out hover:bg-cyan-700"
+                        className="text-md mt-4 rounded-md bg-cyan-500 px-4 py-2 text-center font-medium text-white shadow-xl transition duration-300 ease-in-out hover:bg-cyan-700"
                     >
                         Kontaktovať
                     </button>

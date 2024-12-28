@@ -1,11 +1,11 @@
 export const PriceCard = ({ priceListContent }) => {
     return (
-        <div className="container m-4 mx-auto rounded-3xl border-b-2 border-t-2 border-gray-100 bg-slate-50 p-4 shadow-lg">
+        <div className="container m-4 mx-auto rounded-3xl border-b-2 border-slate-50/60 bg-slate-50/60 p-4 shadow-lg">
             <div className="flex h-full flex-col items-center justify-center">
                 <h1 className="h-20 pb-6 text-center text-2xl font-bold">
                     {priceListContent.heading}
                 </h1>
-                <div className="container mx-auto mb-4 w-fit p-2 shadow-lg">
+                <div className="container mx-auto mb-4 w-fit p-2">
                     <img
                         className="h-36 w-36"
                         src={priceListContent.image}
@@ -28,7 +28,7 @@ export const PriceCard = ({ priceListContent }) => {
                     return (
                         <ul
                             key={item.title}
-                            className="my-2 w-full items-center justify-center rounded-md border p-2 text-center shadow-inner"
+                            className="my-2 w-full items-center justify-center rounded-md border p-2 text-center shadow-inner bg-white/60"
                         >
                             <li className="text-lg xl:text-base">
                                 {item.title}
