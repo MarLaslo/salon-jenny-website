@@ -5,11 +5,12 @@ export const NavBar = () => {
 
     const buttons = [
         ['Domov', '/'],
-        ['Cenník', '/'],
+        ['Cenník služieb', '/'],
+        ['Pred návštevou salónu', '/'],
+        ['SPA a ozónoterapia', '/'],
         ['O mne', '/'],
-        ['Pred návštevou', '/'],
         ['Kontakt', '/'],
-        ['Ozónoterapia', '/']
+        ['Moje práce', '/']
     ];
 
     const handleClick = () => {
@@ -36,7 +37,7 @@ export const NavBar = () => {
                             Salón Jenny
                         </span>
                     </a>
-                    <div className="mx-auto hidden lg:flex">
+                    <div className="mx-auto hidden xl:flex">
                         {buttons.map(([title, url]) => (
                             <div
                                 className="font-extrabold text-white hover:bg-cyan-300 hover:text-cyan-600"
@@ -48,7 +49,7 @@ export const NavBar = () => {
                             </div>
                         ))}
                     </div>
-                    <button className="mr-4 lg:hidden" onClick={handleClick}>
+                    <button className="mr-4 xl:hidden" onClick={handleClick}>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             className="h-8 w-8 stroke-current stroke-2 text-white transition duration-300 ease-in-out hover:text-cyan-500"
@@ -65,7 +66,7 @@ export const NavBar = () => {
                 </div>
 
                 {isMenuOpen && (
-                    <div className="sticky start-0 top-0 z-20 w-full drop-shadow-2xl lg:hidden">
+                    <div className="sticky start-0 top-0 z-20 w-full drop-shadow-2xl xl:hidden">
                         {buttons.map(([title, url]) => (
                             <div
                                 className="h-11 border-b bg-cyan-400 py-1 text-center text-sm font-bold text-white transition duration-300 ease-out hover:bg-cyan-300 hover:text-cyan-500"

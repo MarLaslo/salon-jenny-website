@@ -11,7 +11,7 @@ export const HeroImage = () => {
             </div>
             <div className="flex flex-col items-center justify-start">
                 <h2 className="sha mx-6 break-words text-center text-3xl font-bold text-black md:text-4xl">
-                    Kadernický salón a wellness <br /> pre psov v Trebišove
+                    Kadernícky salón a wellness <br /> pre psov v Trebišove
                 </h2>
                 <p className="mt-6 break-words text-center text-2xl font-medium text-black">
                     Otváracie hodiny: Podľa objednávky
