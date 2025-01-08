@@ -17,7 +17,6 @@ export const HomePage = () => {
                 <OzoneArticle />
                 <About />
                 <Contact />
-
                 <PhotoGalery />
             </FlexRows>
         </>

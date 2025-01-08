@@ -1,7 +1,10 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import { NavContext } from '../context/navContext';
 
 export const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const { navRef } = useContext(NavContext);
 
     const buttons = [
         ['Domov', '/'],
@@ -37,9 +40,15 @@ export const NavBar = () => {
                             Salón Jenny
                         </span>
                     </a>
+                    <button onClick={() => navRef.aboutRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' })}>
+                        TestButton
+                    </button>
+                    <button onClick={() => navRef.priceListRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' })}>
+                        TestButton
+                    </button>
                     <div className="mx-auto hidden xl:flex">
                         {buttons.map(([title, url]) => (
-                            <div
+                            <div 
                                 className="font-extrabold text-white hover:bg-cyan-300 hover:text-cyan-600"
                                 key={title}
                             >

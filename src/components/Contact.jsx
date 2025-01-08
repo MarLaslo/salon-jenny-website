@@ -9,7 +9,7 @@ export const Contact = () => {
             <h2 className="mb-6 text-center text-3xl font-bold text-black md:text-4xl">
                 Kontakt
             </h2>
-            <div className="container mx-auto rounded-3xl border-b-2 border-slate-50/60 bg-slate-50/60 items-right p-12 mt-6 flex flex-col space-y-2 lg:flex-row lg:items-center lg:justify-between lg:space-x-4">
+            <div className="items-right container mx-auto mt-6 flex flex-col space-y-2 rounded-3xl border-b-2 border-slate-50/60 bg-slate-50/60 p-12 lg:flex-row lg:items-center lg:justify-between lg:space-x-4">
                 <div className="flex flex-row space-x-4">
                     <a
                         href="https://www.instagram.com/salonprepsovjenny/"

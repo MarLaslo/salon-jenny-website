@@ -1,9 +1,14 @@
 import { PriceCard } from './PriceCard';
 import PriceListContent from '../utils/priceListContent';
+import { useContext } from 'react';
+import { NavContext } from '../context/navContext';
+
 
 export const PriceList = () => {
+    const { navRef } = useContext(NavContext);
+
     return (
-        <>
+        <div ref={navRef.priceListRef}>
             <h2 className="mt-20 mb-6 text-center text-3xl font-bold text-black md:text-4xl">
                 Cenník služieb
             </h2>
@@ -44,6 +49,6 @@ export const PriceList = () => {
                     od <span className="font-semibold">15€</span>.
                 </p>
             </div>
-        </>
+        </div>
     );
 };
