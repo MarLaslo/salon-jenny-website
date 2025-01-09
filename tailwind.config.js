@@ -6,7 +6,11 @@ export default {
   ],
   darkMode: 'false',
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'bebas-neue': ['"Bebas Neue"', 'serif'],
+      },
+    },
   },
   plugins: [],
 }

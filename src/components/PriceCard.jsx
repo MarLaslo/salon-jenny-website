@@ -1,4 +1,10 @@
+import { scrollUtil } from '../utils/scrollUtil';
+import useNavRef  from '../hooks/useNavRef';
+
+
 export const PriceCard = ({ priceListContent }) => {
+    const navRef  = useNavRef();
+
     return (
         <div className="container m-4 mx-auto rounded-3xl border-b-2 border-slate-50/60 bg-slate-50/60 p-4 shadow-lg">
             <div className="flex h-full flex-col items-center justify-center">
@@ -17,8 +23,8 @@ export const PriceCard = ({ priceListContent }) => {
                     </p>
                     {priceListContent.link && (
                         <a
-                            href={priceListContent.link}
-                            className="text-pretty text-center text-lg text-orange-400"
+                            onClick={() => scrollUtil(navRef.beforeVisitRef)}
+                            className="text-pretty text-center text-lg text-orange-400 hover:text-orange-600 hover:underline hover:cursor-pointer"
                         >
                             <p>{priceListContent.linkText}</p>
                         </a>
