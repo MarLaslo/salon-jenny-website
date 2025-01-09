@@ -1,8 +1,11 @@
 import beforeVisitContent from '../utils/beforeVisitContent';
+import useNavRef  from '../hooks/useNavRef';
 
 export const BeforeVisit = () => {
+    const navRef  = useNavRef();
+
     return (
-        <div className="pb-10  mt-10">
+        <div ref={navRef.beforeVisitRef} className="pb-10  mt-10 scroll-mt-20">
             <h2 className="mb-6 text-center text-3xl font-bold text-black md:text-4xl">
                 Pred návštevou salónu
             </h2>

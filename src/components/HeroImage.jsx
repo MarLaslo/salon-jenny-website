@@ -1,10 +1,13 @@
 import heroImage from '../assets/0.png';
+import useNavRef  from '../hooks/useNavRef';
 
 export const HeroImage = () => {
+    const navRef  = useNavRef();
 
     return (
         <div
-            className="mb-12 mt-8 flex flex-col items-center justify-center justify-items-center"
+            ref={navRef.homeRef}
+            className="mb-12 mt-8 flex scroll-mt-20 flex-col items-center justify-center justify-items-center"
         >
             <div className="max-w-lg self-center p-4">
                 <img src={heroImage} alt="Salón pre psov Jenny" />

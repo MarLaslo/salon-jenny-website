@@ -2,10 +2,14 @@ import InstaIcon from '/src/assets/instagram.svg';
 import FacebookIcon from '/src/assets/facebook.svg';
 import LocationIcon from '/src/assets/location.svg';
 import TelephoneIcon from '/src/assets/telephone.svg';
+import useNavRef  from '../hooks/useNavRef';
+
 
 export const Contact = () => {
+    const navRef  = useNavRef();
+
     return (
-        <div className="w-full pb-28">
+        <div ref={navRef.contactRef} className="w-full pb-28 scroll-mt-20">
             <h2 className="mb-6 text-center text-3xl font-bold text-black md:text-4xl">
                 Kontakt
             </h2>

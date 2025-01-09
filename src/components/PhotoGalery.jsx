@@ -11,10 +11,14 @@ import photoSpringerSpaniel from '/src/assets/DogGalery/SpringerSpaniel.jpg';
 import photoXDog from '/src/assets/DogGalery/X-dog.jpg';
 import photoYork from '/src/assets/DogGalery/York.jpg';
 import photoYork2 from '/src/assets/DogGalery/York2.jpg';
+import useNavRef  from '../hooks/useNavRef';
+
 
 export const PhotoGalery = () => {
+    const navRef  = useNavRef();
+
     return (
-        <div className="container mx-auto mt-10">
+        <div ref={navRef.galleryRef} className="container mx-auto mt-10 scroll-mt-20">
             <h2 className="mb-6 text-center text-3xl font-bold text-black md:text-4xl">
                 Moje práce
             </h2>

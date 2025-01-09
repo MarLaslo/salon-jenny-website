@@ -3,21 +3,14 @@ import { NavContext } from '../context/navContext';
 
 export const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-
     const { navRef } = useContext(NavContext);
-
-    const buttons = [
-        ['Domov', '/'],
-        ['Cenník služieb', '/'],
-        ['Pred návštevou salónu', '/'],
-        ['SPA a ozónoterapia', '/'],
-        ['O mne', '/'],
-        ['Kontakt', '/'],
-        ['Moje práce', '/']
-    ];
 
     const handleClick = () => {
         setIsMenuOpen(!isMenuOpen);
+    };
+
+    const navigateToRef = (ref) => {
+        ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
     };
 
     return (
@@ -40,23 +33,49 @@ export const NavBar = () => {
                             Salón Jenny
                         </span>
                     </a>
-                    <button onClick={() => navRef.aboutRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' })}>
-                        TestButton
-                    </button>
-                    <button onClick={() => navRef.priceListRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' })}>
-                        TestButton
-                    </button>
                     <div className="mx-auto hidden xl:flex">
-                        {buttons.map(([title, url]) => (
-                            <div 
-                                className="font-extrabold text-white hover:bg-cyan-300 hover:text-cyan-600"
-                                key={title}
-                            >
-                                <a href={url} className="block px-4 py-4">
-                                    {title}
-                                </a>
-                            </div>
-                        ))}
+                        <button
+                            className="block px-4 py-4 font-extrabold text-white hover:bg-cyan-300 hover:text-cyan-600"
+                            onClick={() => navigateToRef(navRef.homeRef)}
+                        >
+                            Domov
+                        </button>
+                        <button
+                            className="block px-4 py-4 font-extrabold text-white hover:bg-cyan-300 hover:text-cyan-600"
+                            onClick={() => navigateToRef(navRef.priceListRef)}
+                        >
+                            Cenník služieb
+                        </button>
+                        <button
+                            className="block px-4 py-4 font-extrabold text-white hover:bg-cyan-300 hover:text-cyan-600"
+                            onClick={() => navigateToRef(navRef.beforeVisitRef)}
+                        >
+                            Pred návštevou salónu
+                        </button>
+                        <button
+                            className="block px-4 py-4 font-extrabold text-white hover:bg-cyan-300 hover:text-cyan-600"
+                            onClick={() => navigateToRef(navRef.spaRef)}
+                        >
+                            SPA a ozónoterapia
+                        </button>
+                        <button
+                            className="block px-4 py-4 font-extrabold text-white hover:bg-cyan-300 hover:text-cyan-600"
+                            onClick={() => navigateToRef(navRef.aboutRef)}
+                        >
+                            O mne
+                        </button>
+                        <button
+                            className="block px-4 py-4 font-extrabold text-white hover:bg-cyan-300 hover:text-cyan-600"
+                            onClick={() => navigateToRef(navRef.contactRef)}
+                        >
+                            Kontakt
+                        </button>
+                        <button
+                            className="block px-4 py-4 font-extrabold text-white hover:bg-cyan-300 hover:text-cyan-600"
+                            onClick={() => navigateToRef(navRef.galleryRef)}
+                        >
+                            Moje práce
+                        </button>
                     </div>
                     <button className="mr-4 xl:hidden" onClick={handleClick}>
                         <svg

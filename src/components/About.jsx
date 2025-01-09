@@ -6,7 +6,7 @@ export const About = () => {
     const { navRef } = useContext(NavContext);
 
     return (
-        <div ref={navRef.aboutRef} className="mt-10 pb-10">
+        <div ref={navRef.aboutRef} className="mt-10 pb-10 scroll-mt-20">
             <h2 className="mb-6 text-center text-3xl font-bold text-black md:text-4xl">
                 O mne
             </h2>
