@@ -1,9 +1,9 @@
 import photo from '/src/assets/Jarimil2.jpg';
-import { useContext } from 'react';
-import { NavContext } from '../context/navContext';
+import useNavRef  from '../hooks/useNavRef';
+
 
 export const About = () => {
-    const { navRef } = useContext(NavContext);
+    const navRef = useNavRef();
 
     return (
         <div ref={navRef.aboutRef} className="mt-10 pb-10 scroll-mt-20">
