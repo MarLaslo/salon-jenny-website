@@ -1,8 +1,11 @@
 import { HydroMassage } from '../components/HydroMassage';
+import useNavRef  from '../hooks/useNavRef';
 
 export const OzoneArticle = () => {
+    const navRef  = useNavRef();
+
     return (
-        <div className="mt-10 pb-10">
+        <div ref={navRef.spaRef} className="mt-10 pb-10 scroll-mt-20">
             <h2 className="mb-6 text-center text-3xl font-bold text-black md:text-4xl">
                 SPA a ozónoterapia
             </h2>

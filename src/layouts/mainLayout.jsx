@@ -2,8 +2,9 @@ import { NavBar } from '../components/NavBar';
 import { Outlet } from 'react-router';
 import bgImage from '/src/assets/bg-image-1.jpg';
 import useInitialState from '../hooks/useInitialState';
+import { NavProvider } from '../context/navContext';
 
-export const MainLayout = ({ children }) => {
+export const MainLayout = () => {
     const intialState = useInitialState();
 
     return (
@@ -14,10 +15,12 @@ export const MainLayout = ({ children }) => {
             <div
                 className={`transition-opacity duration-700 ease-in ${intialState ? 'opacity-100' : 'opacity-0'}`}
             >
-                <NavBar />
-                <main>
-                    <Outlet />
-                </main>
+                <NavProvider>
+                    <NavBar />
+                    <main>
+                        <Outlet />
+                    </main>
+                </NavProvider>
             </div>
         </div>
     );
