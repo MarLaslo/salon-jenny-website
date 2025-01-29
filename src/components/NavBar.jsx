@@ -58,15 +58,15 @@ export const NavBar = () => {
                         </button>
                         <button
                             className="block px-4 py-4 font-extrabold text-white hover:bg-cyan-500"
-                            onClick={() => scrollUtil(navRef.contactRef)}
-                        >
-                            Kontakt
-                        </button>
-                        <button
-                            className="block px-4 py-4 font-extrabold text-white hover:bg-cyan-500"
                             onClick={() => scrollUtil(navRef.galleryRef)}
                         >
                             Moje práce
+                        </button>
+                        <button
+                            className="block px-4 py-4 font-extrabold text-white hover:bg-cyan-500"
+                            onClick={() => scrollUtil(navRef.contactRef)}
+                        >
+                            Kontakt
                         </button>
                     </div>
                     <button className="mr-4 xl:hidden" onClick={handleClick}>
@@ -134,20 +134,20 @@ export const NavBar = () => {
                         <button
                             className="block h-10 w-full border-b bg-cyan-600/95 px-4 py-1 text-center text-sm font-bold text-white transition duration-300 ease-out hover:bg-cyan-500"
                             onClick={() => {
-                                scrollUtil(navRef.contactRef);
-                                setIsMenuOpen(!isMenuOpen);
-                            }}
-                        >
-                            Kontakt
-                        </button>
-                        <button
-                            className="block h-10 w-full border-b bg-cyan-600/95 px-4 py-1 text-center text-sm font-bold text-white transition duration-300 ease-out hover:bg-cyan-500"
-                            onClick={() => {
                                 scrollUtil(navRef.galleryRef);
                                 setIsMenuOpen(!isMenuOpen);
                             }}
                         >
                             Moje práce
+                        </button>
+                        <button
+                            className="block h-10 w-full border-b bg-cyan-600/95 px-4 py-1 text-center text-sm font-bold text-white transition duration-300 ease-out hover:bg-cyan-500"
+                            onClick={() => {
+                                scrollUtil(navRef.contactRef);
+                                setIsMenuOpen(!isMenuOpen);
+                            }}
+                        >
+                            Kontakt
                         </button>
                     </div>
                 )}

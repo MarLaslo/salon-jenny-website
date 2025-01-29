@@ -12,13 +12,11 @@ export const HomePage = () => {
         <>
             <HeroImage />
             <PriceList />
-            <FlexRows>
-                <BeforeVisit />
-                <OzoneArticle />
-                <About />
-                <Contact />
-                <PhotoGalery />
-            </FlexRows>
+            <BeforeVisit />
+            <OzoneArticle />
+            <About />
+            <PhotoGalery />
+            <Contact />
         </>
     );
 };
